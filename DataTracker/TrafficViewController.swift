@@ -7,12 +7,24 @@
 //
 
 import UIKit
+import DataTrackerFramework
 
-class ViewController: UIViewController {
-
+class TrafficViewController: TrafficDataViewController {
+    
+    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var label1: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        fetchStats { error in
+            if error == nil {
+                self.label1.text = self.trafficStats!.usedVolumeString
+                self.label2.text = self.trafficStats!.initialVolumeString
+            }
+            
+        
+    }
     }
 
     override func didReceiveMemoryWarning() {
