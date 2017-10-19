@@ -8,12 +8,26 @@
 
 import UIKit
 import NotificationCenter
+import DataTrackerFramework
 
-class TodayViewController: UIViewController, NCWidgetProviding {
+class TodayViewController: TrafficDataViewController, NCWidgetProviding {
         
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
+        currentDataUseLabel.text = "--"
+        maxDataUseLabel.text = "--"
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        fetchStats { error in
+            if error == nil {
+                self.currentDataUseLabel.text = self.trafficStats?.usedVolumeString
+                self.maxDataUseLabel.text = self.trafficStats?.initialVolumeString
+                self.timeRemainingLabel.text = self.trafficStats?.remainingTimeString?.appending(" remaining")
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -22,13 +36,19 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
-        // Perform any setup necessary in order to update the view.
+        fetchStats { error in
+            if error == nil {
+                self.currentDataUseLabel.text = self.trafficStats?.usedVolumeString
+                self.maxDataUseLabel.text = self.trafficStats?.initialVolumeString
+                self.timeRemainingLabel.text = self.trafficStats?.remainingTimeString?.appending(" remaining")
+
+                completionHandler(NCUpdateResult.newData)
+            } else { completionHandler(NCUpdateResult.failed) }
+        }
         
-        // If an error is encountered, use NCUpdateResult.Failed
-        // If there's no update required, use NCUpdateResult.NoData
-        // If there's an update, use NCUpdateResult.NewData
-        
-        completionHandler(NCUpdateResult.newData)
     }
+    @IBOutlet weak var currentDataUseLabel: UILabel!
+    @IBOutlet weak var maxDataUseLabel: UILabel!
+    @IBOutlet weak var timeRemainingLabel: UILabel!
     
 }

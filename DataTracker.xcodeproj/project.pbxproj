@@ -20,6 +20,7 @@
 		DA4277521F93E2FA004CC63E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4277501F93E2FA004CC63E /* MainInterface.storyboard */; };
 		DA4277561F93E2FA004CC63E /* DataTrackerWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA42774A1F93E2FA004CC63E /* DataTrackerWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DA42775D1F93E31E004CC63E /* DataTrackerFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0C262D1F9278DE0000E81C /* DataTrackerFramework.framework */; };
+		DAB0A5B31F93F9AC00CDCC01 /* DataTrackerFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA0C262D1F9278DE0000E81C /* DataTrackerFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,13 @@
 			remoteGlobalIDString = DA4277491F93E2FA004CC63E;
 			remoteInfo = DataTrackerWidget;
 		};
+		DAB0A5B41F93F9AC00CDCC01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA0C26271F9278DE0000E81C /* DataTrackerFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DA0C26061F9005D60000E81C;
+			remoteInfo = DataTrackerFramework;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,6 +78,17 @@
 				DA4277561F93E2FA004CC63E /* DataTrackerWidget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB0A5B61F93F9AC00CDCC01 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DAB0A5B31F93F9AC00CDCC01 /* DataTrackerFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -224,11 +243,13 @@
 				DA0C25C91F9005670000E81C /* Frameworks */,
 				DA0C25CA1F9005670000E81C /* Resources */,
 				DA42775C1F93E2FA004CC63E /* Embed App Extensions */,
+				DAB0A5B61F93F9AC00CDCC01 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				DA4277551F93E2FA004CC63E /* PBXTargetDependency */,
+				DAB0A5B51F93F9AC00CDCC01 /* PBXTargetDependency */,
 			);
 			name = DataTracker;
 			productName = DataTracker;
@@ -448,6 +469,11 @@
 			isa = PBXTargetDependency;
 			target = DA4277491F93E2FA004CC63E /* DataTrackerWidget */;
 			targetProxy = DA4277541F93E2FA004CC63E /* PBXContainerItemProxy */;
+		};
+		DAB0A5B51F93F9AC00CDCC01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DataTrackerFramework;
+			targetProxy = DAB0A5B41F93F9AC00CDCC01 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
