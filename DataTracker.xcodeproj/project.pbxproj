@@ -21,6 +21,17 @@
 		DA4277561F93E2FA004CC63E /* DataTrackerWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA42774A1F93E2FA004CC63E /* DataTrackerWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DA42775D1F93E31E004CC63E /* DataTrackerFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0C262D1F9278DE0000E81C /* DataTrackerFramework.framework */; };
 		DAB0A5B31F93F9AC00CDCC01 /* DataTrackerFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA0C262D1F9278DE0000E81C /* DataTrackerFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAB0A5BD1F99356700CDCC01 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB0A5BB1F99356700CDCC01 /* Interface.storyboard */; };
+		DAB0A5BF1F99356700CDCC01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB0A5BE1F99356700CDCC01 /* Assets.xcassets */; };
+		DAB0A5C61F99356700CDCC01 /* DataTrackerWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DAB0A5C51F99356700CDCC01 /* DataTrackerWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DAB0A5CB1F99356700CDCC01 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB0A5CA1F99356700CDCC01 /* InterfaceController.swift */; };
+		DAB0A5CD1F99356700CDCC01 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB0A5CC1F99356700CDCC01 /* ExtensionDelegate.swift */; };
+		DAB0A5CF1F99356700CDCC01 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB0A5CE1F99356700CDCC01 /* ComplicationController.swift */; };
+		DAB0A5D11F99356700CDCC01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB0A5D01F99356700CDCC01 /* Assets.xcassets */; };
+		DAB0A5D51F99356700CDCC01 /* DataTrackerWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DAB0A5B91F99356700CDCC01 /* DataTrackerWatch.app */; };
+		DAB0A5F71F993BBA00CDCC01 /* DataTrackerWatchFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB0A5F61F993BB500CDCC01 /* DataTrackerWatchFramework.framework */; };
+		DAB0A5F81F993BBA00CDCC01 /* DataTrackerWatchFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB0A5F61F993BB500CDCC01 /* DataTrackerWatchFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAB0A5FD1F9E789100CDCC01 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB0A5FC1F9E789100CDCC01 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +77,34 @@
 			remoteGlobalIDString = DA0C26061F9005D60000E81C;
 			remoteInfo = DataTrackerFramework;
 		};
+		DAB0A5C71F99356700CDCC01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA0C25C41F9005670000E81C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAB0A5C41F99356700CDCC01;
+			remoteInfo = "DataTrackerWatch Extension";
+		};
+		DAB0A5D31F99356700CDCC01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA0C25C41F9005670000E81C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAB0A5B81F99356700CDCC01;
+			remoteInfo = DataTrackerWatch;
+		};
+		DAB0A5F51F993BB500CDCC01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA0C26271F9278DE0000E81C /* DataTrackerFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAB0A5E81F993B4F00CDCC01;
+			remoteInfo = DataTrackerWatchFramework;
+		};
+		DAB0A5F91F993BBA00CDCC01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA0C26271F9278DE0000E81C /* DataTrackerFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DAB0A5E71F993B4F00CDCC01;
+			remoteInfo = DataTrackerWatchFramework;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -87,6 +126,39 @@
 			dstSubfolderSpec = 10;
 			files = (
 				DAB0A5B31F93F9AC00CDCC01 /* DataTrackerFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB0A5D91F99356800CDCC01 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DAB0A5C61F99356700CDCC01 /* DataTrackerWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB0A5DD1F99356800CDCC01 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DAB0A5D51F99356700CDCC01 /* DataTrackerWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB0A5FB1F993BBB00CDCC01 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DAB0A5F81F993BBA00CDCC01 /* DataTrackerWatchFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,6 +185,17 @@
 		DA42774E1F93E2FA004CC63E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		DA4277511F93E2FA004CC63E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		DA4277531F93E2FA004CC63E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB0A5B91F99356700CDCC01 /* DataTrackerWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataTrackerWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB0A5BC1F99356700CDCC01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DAB0A5BE1F99356700CDCC01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAB0A5C01F99356700CDCC01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB0A5C51F99356700CDCC01 /* DataTrackerWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DataTrackerWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB0A5CA1F99356700CDCC01 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		DAB0A5CC1F99356700CDCC01 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		DAB0A5CE1F99356700CDCC01 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		DAB0A5D01F99356700CDCC01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAB0A5D21F99356700CDCC01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB0A5FC1F9E789100CDCC01 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +230,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAB0A5C21F99356700CDCC01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB0A5F71F993BBA00CDCC01 /* DataTrackerWatchFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -158,6 +249,8 @@
 				DA0C25E31F9005680000E81C /* DataTrackerTests */,
 				DA0C25EE1F9005680000E81C /* DataTrackerUITests */,
 				DA42774D1F93E2FA004CC63E /* DataTrackerWidget */,
+				DAB0A5BA1F99356700CDCC01 /* DataTrackerWatch */,
+				DAB0A5C91F99356700CDCC01 /* DataTrackerWatch Extension */,
 				DA0C25CD1F9005670000E81C /* Products */,
 				DA0C26301F92791B0000E81C /* Frameworks */,
 			);
@@ -170,6 +263,8 @@
 				DA0C25E01F9005680000E81C /* DataTrackerTests.xctest */,
 				DA0C25EB1F9005680000E81C /* DataTrackerUITests.xctest */,
 				DA42774A1F93E2FA004CC63E /* DataTrackerWidget.appex */,
+				DAB0A5B91F99356700CDCC01 /* DataTrackerWatch.app */,
+				DAB0A5C51F99356700CDCC01 /* DataTrackerWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,6 +274,7 @@
 			children = (
 				DA0C25CF1F9005670000E81C /* AppDelegate.swift */,
 				DA0C25D11F9005670000E81C /* TrafficViewController.swift */,
+				DAB0A5FC1F9E789100CDCC01 /* File.swift */,
 				DA0C25D31F9005670000E81C /* Main.storyboard */,
 				DA0C25D61F9005670000E81C /* Assets.xcassets */,
 				DA0C25D81F9005670000E81C /* LaunchScreen.storyboard */,
@@ -210,6 +306,7 @@
 			children = (
 				DA0C262D1F9278DE0000E81C /* DataTrackerFramework.framework */,
 				DA0C262F1F9278DE0000E81C /* DataTrackerFrameworkTests.xctest */,
+				DAB0A5F61F993BB500CDCC01 /* DataTrackerWatchFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -232,6 +329,28 @@
 			path = DataTrackerWidget;
 			sourceTree = "<group>";
 		};
+		DAB0A5BA1F99356700CDCC01 /* DataTrackerWatch */ = {
+			isa = PBXGroup;
+			children = (
+				DAB0A5BB1F99356700CDCC01 /* Interface.storyboard */,
+				DAB0A5BE1F99356700CDCC01 /* Assets.xcassets */,
+				DAB0A5C01F99356700CDCC01 /* Info.plist */,
+			);
+			path = DataTrackerWatch;
+			sourceTree = "<group>";
+		};
+		DAB0A5C91F99356700CDCC01 /* DataTrackerWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DAB0A5CA1F99356700CDCC01 /* InterfaceController.swift */,
+				DAB0A5CC1F99356700CDCC01 /* ExtensionDelegate.swift */,
+				DAB0A5CE1F99356700CDCC01 /* ComplicationController.swift */,
+				DAB0A5D01F99356700CDCC01 /* Assets.xcassets */,
+				DAB0A5D21F99356700CDCC01 /* Info.plist */,
+			);
+			path = "DataTrackerWatch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,12 +363,14 @@
 				DA0C25CA1F9005670000E81C /* Resources */,
 				DA42775C1F93E2FA004CC63E /* Embed App Extensions */,
 				DAB0A5B61F93F9AC00CDCC01 /* Embed Frameworks */,
+				DAB0A5DD1F99356800CDCC01 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				DA4277551F93E2FA004CC63E /* PBXTargetDependency */,
 				DAB0A5B51F93F9AC00CDCC01 /* PBXTargetDependency */,
+				DAB0A5D41F99356700CDCC01 /* PBXTargetDependency */,
 			);
 			name = DataTracker;
 			productName = DataTracker;
@@ -309,13 +430,49 @@
 			productReference = DA42774A1F93E2FA004CC63E /* DataTrackerWidget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		DAB0A5B81F99356700CDCC01 /* DataTrackerWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB0A5DA1F99356800CDCC01 /* Build configuration list for PBXNativeTarget "DataTrackerWatch" */;
+			buildPhases = (
+				DAB0A5B71F99356700CDCC01 /* Resources */,
+				DAB0A5D91F99356800CDCC01 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAB0A5C81F99356700CDCC01 /* PBXTargetDependency */,
+			);
+			name = DataTrackerWatch;
+			productName = DataTrackerWatch;
+			productReference = DAB0A5B91F99356700CDCC01 /* DataTrackerWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		DAB0A5C41F99356700CDCC01 /* DataTrackerWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB0A5D61F99356800CDCC01 /* Build configuration list for PBXNativeTarget "DataTrackerWatch Extension" */;
+			buildPhases = (
+				DAB0A5C11F99356700CDCC01 /* Sources */,
+				DAB0A5C21F99356700CDCC01 /* Frameworks */,
+				DAB0A5C31F99356700CDCC01 /* Resources */,
+				DAB0A5FB1F993BBB00CDCC01 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAB0A5FA1F993BBA00CDCC01 /* PBXTargetDependency */,
+			);
+			name = "DataTrackerWatch Extension";
+			productName = "DataTrackerWatch Extension";
+			productReference = DAB0A5C51F99356700CDCC01 /* DataTrackerWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		DA0C25C41F9005670000E81C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
+				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Paul Pfeiffer";
 				TargetAttributes = {
@@ -335,6 +492,14 @@
 					};
 					DA4277491F93E2FA004CC63E = {
 						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					DAB0A5B81F99356700CDCC01 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					DAB0A5C41F99356700CDCC01 = {
+						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -362,6 +527,8 @@
 				DA0C25DF1F9005680000E81C /* DataTrackerTests */,
 				DA0C25EA1F9005680000E81C /* DataTrackerUITests */,
 				DA4277491F93E2FA004CC63E /* DataTrackerWidget */,
+				DAB0A5B81F99356700CDCC01 /* DataTrackerWatch */,
+				DAB0A5C41F99356700CDCC01 /* DataTrackerWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -379,6 +546,13 @@
 			fileType = wrapper.cfbundle;
 			path = DataTrackerFrameworkTests.xctest;
 			remoteRef = DA0C262E1F9278DE0000E81C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DAB0A5F61F993BB500CDCC01 /* DataTrackerWatchFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DataTrackerWatchFramework.framework;
+			remoteRef = DAB0A5F51F993BB500CDCC01 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -416,6 +590,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAB0A5B71F99356700CDCC01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB0A5BF1F99356700CDCC01 /* Assets.xcassets in Resources */,
+				DAB0A5BD1F99356700CDCC01 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB0A5C31F99356700CDCC01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB0A5D11F99356700CDCC01 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -424,6 +615,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA0C25D21F9005670000E81C /* TrafficViewController.swift in Sources */,
+				DAB0A5FD1F9E789100CDCC01 /* File.swift in Sources */,
 				DA0C25D01F9005670000E81C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +644,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAB0A5C11F99356700CDCC01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB0A5CD1F99356700CDCC01 /* ExtensionDelegate.swift in Sources */,
+				DAB0A5CB1F99356700CDCC01 /* InterfaceController.swift in Sources */,
+				DAB0A5CF1F99356700CDCC01 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -474,6 +676,21 @@
 			isa = PBXTargetDependency;
 			name = DataTrackerFramework;
 			targetProxy = DAB0A5B41F93F9AC00CDCC01 /* PBXContainerItemProxy */;
+		};
+		DAB0A5C81F99356700CDCC01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAB0A5C41F99356700CDCC01 /* DataTrackerWatch Extension */;
+			targetProxy = DAB0A5C71F99356700CDCC01 /* PBXContainerItemProxy */;
+		};
+		DAB0A5D41F99356700CDCC01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAB0A5B81F99356700CDCC01 /* DataTrackerWatch */;
+			targetProxy = DAB0A5D31F99356700CDCC01 /* PBXContainerItemProxy */;
+		};
+		DAB0A5FA1F993BBA00CDCC01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DataTrackerWatchFramework;
+			targetProxy = DAB0A5F91F993BBA00CDCC01 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -500,6 +717,14 @@
 				DA4277511F93E2FA004CC63E /* Base */,
 			);
 			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		DAB0A5BB1F99356700CDCC01 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAB0A5BC1F99356700CDCC01 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -740,6 +965,80 @@
 			};
 			name = Release;
 		};
+		DAB0A5D71F99356800CDCC01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CV5377K4H;
+				INFOPLIST_FILE = "DataTrackerWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = paulpfeiffer.DataTracker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Debug;
+		};
+		DAB0A5D81F99356800CDCC01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CV5377K4H;
+				INFOPLIST_FILE = "DataTrackerWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = paulpfeiffer.DataTracker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Release;
+		};
+		DAB0A5DB1F99356800CDCC01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CV5377K4H;
+				IBSC_MODULE = DataTrackerWatch_Extension;
+				INFOPLIST_FILE = DataTrackerWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = paulpfeiffer.DataTracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Debug;
+		};
+		DAB0A5DC1F99356800CDCC01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CV5377K4H;
+				IBSC_MODULE = DataTrackerWatch_Extension;
+				INFOPLIST_FILE = DataTrackerWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = paulpfeiffer.DataTracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -784,6 +1083,24 @@
 			buildConfigurations = (
 				DA4277571F93E2FA004CC63E /* Debug */,
 				DA4277581F93E2FA004CC63E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAB0A5D61F99356800CDCC01 /* Build configuration list for PBXNativeTarget "DataTrackerWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB0A5D71F99356800CDCC01 /* Debug */,
+				DAB0A5D81F99356800CDCC01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAB0A5DA1F99356800CDCC01 /* Build configuration list for PBXNativeTarget "DataTrackerWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB0A5DB1F99356800CDCC01 /* Debug */,
+				DAB0A5DC1F99356800CDCC01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
