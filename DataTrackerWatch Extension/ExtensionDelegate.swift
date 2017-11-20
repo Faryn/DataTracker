@@ -13,7 +13,7 @@ class ExtensionDelegate: TrafficDataWkInterfaceController, WKExtensionDelegate {
     
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
-        WKExtension.shared().scheduleBackgroundRefresh(withPreferredDate: .init(timeIntervalSinceNow: 0), userInfo: nil, scheduledCompletion: { (error: Error?) in
+        WKExtension.shared().scheduleBackgroundRefresh(withPreferredDate: .init(timeIntervalSinceNow: 30), userInfo: nil, scheduledCompletion: { (error: Error?) in
             if let _ = error {
                 print("schedule error one min")
             }

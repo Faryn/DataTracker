@@ -9,8 +9,32 @@
 import UIKit
 import NotificationCenter
 import DataTrackerFramework
+import WatchConnectivity
 
-class TodayViewController: TrafficDataViewController, NCWidgetProviding {
+class TodayViewController: TrafficDataViewController, NCWidgetProviding, WCSessionDelegate {
+    
+    // MARK: WCSessionDelegate
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        //
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        //
+    }
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        //
+    }
+    
+    
+    var session: WCSession? {
+        didSet {
+            if let session = session {
+                session.delegate = self
+                session.activate()
+            }
+        }
+    }
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +44,15 @@ class TodayViewController: TrafficDataViewController, NCWidgetProviding {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        self.session = WCSession.default
         super.viewDidAppear(animated)
         fetchStats { error in
             if error == nil {
+                if WCSession.isSupported() {
+                    do {
+                        try self.session?.updateApplicationContext((self.trafficStats?.trafficStats)! as! [String : Any])
+                    } catch { }
+                }
                 self.currentDataUseLabel.text = self.trafficStats?.usedVolumeString
                 self.maxDataUseLabel.text = self.trafficStats?.initialVolumeString
                 self.timeRemainingLabel.text = self.trafficStats?.remainingTimeString?.appending(" remaining")
@@ -52,3 +82,5 @@ class TodayViewController: TrafficDataViewController, NCWidgetProviding {
     @IBOutlet weak var timeRemainingLabel: UILabel!
     
 }
+
+
