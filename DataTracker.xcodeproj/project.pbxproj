@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8082A5AE4F74C3ED1619CB1 /* Pods_DataTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A8A3A2028F64E459622834 /* Pods_DataTracker.framework */; };
 		DA0C25D01F9005670000E81C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0C25CF1F9005670000E81C /* AppDelegate.swift */; };
 		DA0C25D21F9005670000E81C /* TrafficViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0C25D11F9005670000E81C /* TrafficViewController.swift */; };
 		DA0C25D51F9005670000E81C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0C25D31F9005670000E81C /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		DA0C25E51F9005680000E81C /* DataTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0C25E41F9005680000E81C /* DataTrackerTests.swift */; };
 		DA0C25F01F9005680000E81C /* DataTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0C25EF1F9005680000E81C /* DataTrackerUITests.swift */; };
 		DA0C26311F92791B0000E81C /* DataTrackerFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0C262D1F9278DE0000E81C /* DataTrackerFramework.framework */; };
+		DA3CAE4E201E475500D06B3E /* Pods_DataTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A8A3A2028F64E459622834 /* Pods_DataTracker.framework */; };
 		DA42774C1F93E2FA004CC63E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA42774B1F93E2FA004CC63E /* NotificationCenter.framework */; };
 		DA42774F1F93E2FA004CC63E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA42774E1F93E2FA004CC63E /* TodayViewController.swift */; };
 		DA4277521F93E2FA004CC63E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4277501F93E2FA004CC63E /* MainInterface.storyboard */; };
@@ -166,6 +168,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		13A8A3A2028F64E459622834 /* Pods_DataTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		142CC4ADC8B9B7266DCA82BA /* Pods-DataTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataTracker/Pods-DataTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		B3CDC771133C0BEAFB7AF8C1 /* Pods-DataTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataTracker/Pods-DataTracker.release.xcconfig"; sourceTree = "<group>"; };
 		DA0C25CC1F9005670000E81C /* DataTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0C25CF1F9005670000E81C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA0C25D11F9005670000E81C /* TrafficViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +190,10 @@
 		DA42774E1F93E2FA004CC63E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		DA4277511F93E2FA004CC63E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		DA4277531F93E2FA004CC63E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA46D5B71FC6230600D0BB9A /* DataTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DataTracker.entitlements; sourceTree = "<group>"; };
+		DA46D5B81FC6233000D0BB9A /* DataTrackerWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DataTrackerWatch Extension.entitlements"; sourceTree = "<group>"; };
+		DA46D5B91FC6234B00D0BB9A /* DataTrackerWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DataTrackerWatch.entitlements; sourceTree = "<group>"; };
+		DA46D5BA1FC6235300D0BB9A /* DataTrackerWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DataTrackerWidget.entitlements; sourceTree = "<group>"; };
 		DAB0A5B91F99356700CDCC01 /* DataTrackerWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataTrackerWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB0A5BC1F99356700CDCC01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		DAB0A5BE1F99356700CDCC01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -199,11 +208,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8491AD2E9C80402CA3FC2DC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA0C25C91F9005670000E81C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DA0C26311F92791B0000E81C /* DataTrackerFramework.framework in Frameworks */,
+				D8082A5AE4F74C3ED1619CB1 /* Pods_DataTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +242,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3CAE4E201E475500D06B3E /* Pods_DataTracker.framework in Frameworks */,
 				DA42775D1F93E31E004CC63E /* DataTrackerFramework.framework in Frameworks */,
 				DA42774C1F93E2FA004CC63E /* NotificationCenter.framework in Frameworks */,
 			);
@@ -241,6 +259,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		368B1098F7813052353D767F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				142CC4ADC8B9B7266DCA82BA /* Pods-DataTracker.debug.xcconfig */,
+				B3CDC771133C0BEAFB7AF8C1 /* Pods-DataTracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DA0C25C31F9005670000E81C = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +280,7 @@
 				DAB0A5C91F99356700CDCC01 /* DataTrackerWatch Extension */,
 				DA0C25CD1F9005670000E81C /* Products */,
 				DA0C26301F92791B0000E81C /* Frameworks */,
+				368B1098F7813052353D767F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -272,6 +300,7 @@
 		DA0C25CE1F9005670000E81C /* DataTracker */ = {
 			isa = PBXGroup;
 			children = (
+				DA46D5B71FC6230600D0BB9A /* DataTracker.entitlements */,
 				DA0C25CF1F9005670000E81C /* AppDelegate.swift */,
 				DA0C25D11F9005670000E81C /* TrafficViewController.swift */,
 				DAB0A5FC1F9E789100CDCC01 /* File.swift */,
@@ -315,6 +344,7 @@
 			isa = PBXGroup;
 			children = (
 				DA42774B1F93E2FA004CC63E /* NotificationCenter.framework */,
+				13A8A3A2028F64E459622834 /* Pods_DataTracker.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -322,6 +352,7 @@
 		DA42774D1F93E2FA004CC63E /* DataTrackerWidget */ = {
 			isa = PBXGroup;
 			children = (
+				DA46D5BA1FC6235300D0BB9A /* DataTrackerWidget.entitlements */,
 				DA42774E1F93E2FA004CC63E /* TodayViewController.swift */,
 				DA4277501F93E2FA004CC63E /* MainInterface.storyboard */,
 				DA4277531F93E2FA004CC63E /* Info.plist */,
@@ -332,6 +363,7 @@
 		DAB0A5BA1F99356700CDCC01 /* DataTrackerWatch */ = {
 			isa = PBXGroup;
 			children = (
+				DA46D5B91FC6234B00D0BB9A /* DataTrackerWatch.entitlements */,
 				DAB0A5BB1F99356700CDCC01 /* Interface.storyboard */,
 				DAB0A5BE1F99356700CDCC01 /* Assets.xcassets */,
 				DAB0A5C01F99356700CDCC01 /* Info.plist */,
@@ -342,6 +374,7 @@
 		DAB0A5C91F99356700CDCC01 /* DataTrackerWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DA46D5B81FC6233000D0BB9A /* DataTrackerWatch Extension.entitlements */,
 				DAB0A5CA1F99356700CDCC01 /* InterfaceController.swift */,
 				DAB0A5CC1F99356700CDCC01 /* ExtensionDelegate.swift */,
 				DAB0A5CE1F99356700CDCC01 /* ComplicationController.swift */,
@@ -358,12 +391,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA0C25F41F9005680000E81C /* Build configuration list for PBXNativeTarget "DataTracker" */;
 			buildPhases = (
+				412B5EF3DAD792D8B8055127 /* [CP] Check Pods Manifest.lock */,
 				DA0C25C81F9005670000E81C /* Sources */,
 				DA0C25C91F9005670000E81C /* Frameworks */,
 				DA0C25CA1F9005670000E81C /* Resources */,
 				DA42775C1F93E2FA004CC63E /* Embed App Extensions */,
 				DAB0A5B61F93F9AC00CDCC01 /* Embed Frameworks */,
 				DAB0A5DD1F99356800CDCC01 /* Embed Watch Content */,
+				9F10722779CEE2247A0C2307 /* [CP] Embed Pods Frameworks */,
+				BCE109CE06F466CDC4F4FBC5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -436,6 +472,7 @@
 			buildPhases = (
 				DAB0A5B71F99356700CDCC01 /* Resources */,
 				DAB0A5D91F99356800CDCC01 /* Embed App Extensions */,
+				8491AD2E9C80402CA3FC2DC6 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -479,6 +516,14 @@
 					DA0C25CB1F9005670000E81C = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					DA0C25DF1F9005680000E81C = {
 						CreatedOnToolsVersion = 9.0;
@@ -493,14 +538,29 @@
 					DA4277491F93E2FA004CC63E = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					DAB0A5B81F99356700CDCC01 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					DAB0A5C41F99356700CDCC01 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -608,6 +668,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		412B5EF3DAD792D8B8055127 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DataTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F10722779CEE2247A0C2307 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DataTracker/Pods-DataTracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DataTracker/Pods-DataTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCE109CE06F466CDC4F4FBC5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DataTracker/Pods-DataTracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA0C25C81F9005670000E81C /* Sources */ = {
@@ -839,9 +953,11 @@
 		};
 		DA0C25F51F9005680000E81C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 142CC4ADC8B9B7266DCA82BA /* Pods-DataTracker.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DataTracker/DataTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CV5377K4H;
 				INFOPLIST_FILE = DataTracker/Info.plist;
@@ -855,9 +971,11 @@
 		};
 		DA0C25F61F9005680000E81C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3CDC771133C0BEAFB7AF8C1 /* Pods-DataTracker.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DataTracker/DataTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CV5377K4H;
 				INFOPLIST_FILE = DataTracker/Info.plist;
@@ -938,6 +1056,7 @@
 		DA4277571F93E2FA004CC63E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DataTrackerWidget/DataTrackerWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CV5377K4H;
 				INFOPLIST_FILE = DataTrackerWidget/Info.plist;
@@ -953,6 +1072,7 @@
 		DA4277581F93E2FA004CC63E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DataTrackerWidget/DataTrackerWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CV5377K4H;
 				INFOPLIST_FILE = DataTrackerWidget/Info.plist;
@@ -969,6 +1089,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "DataTrackerWatch Extension/DataTrackerWatch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CV5377K4H;
 				INFOPLIST_FILE = "DataTrackerWatch Extension/Info.plist";
@@ -987,6 +1108,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "DataTrackerWatch Extension/DataTrackerWatch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CV5377K4H;
 				INFOPLIST_FILE = "DataTrackerWatch Extension/Info.plist";
@@ -1006,6 +1128,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DataTrackerWatch/DataTrackerWatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CV5377K4H;
 				IBSC_MODULE = DataTrackerWatch_Extension;
@@ -1016,7 +1139,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
 			};
 			name = Debug;
 		};
@@ -1025,6 +1148,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DataTrackerWatch/DataTrackerWatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CV5377K4H;
 				IBSC_MODULE = DataTrackerWatch_Extension;
@@ -1035,7 +1159,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
 			};
 			name = Release;
 		};

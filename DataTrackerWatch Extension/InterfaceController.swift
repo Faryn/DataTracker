@@ -34,7 +34,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     }
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        //
+        NSLog("%@", "activationDidCompleteWith activationState:\(activationState) error:\(error)")
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
@@ -56,6 +56,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         ext.trafficStats = TrafficStats(fromDictionary: msg!)
         ext.reloadComplication()
     }
+    
 }
 
 

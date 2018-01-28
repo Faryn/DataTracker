@@ -1,0 +1,6 @@
+framework module Pods_DataTracker {
+  umbrella header "Pods-DataTracker-umbrella.h"
+
+  export *
+  module * { export * }
+}

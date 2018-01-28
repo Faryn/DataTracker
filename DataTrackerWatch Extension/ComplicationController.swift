@@ -33,14 +33,17 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: - Timeline Population
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
-        let myDelegate = WKExtension.shared().delegate as? ExtensionDelegate
-        guard let trafficStats = myDelegate?.trafficStats else { return }
-        let template = CLKComplicationTemplateModularSmallRingText()
-        template.textProvider = CLKSimpleTextProvider(text: String(describing: myDelegate!.trafficStats!.usedPercentage!))
-        template.fillFraction = Float((trafficStats.usedPercentage)!)/100
-        print(String(describing: trafficStats.usedPercentage!))
-        print("\(template.fillFraction)")
-        handler(CLKComplicationTimelineEntry(date: .init(timeIntervalSinceNow: 0), complicationTemplate: template))
+        guard let myDelegate = WKExtension.shared().delegate as? ExtensionDelegate else { return}
+        myDelegate.fetchStats{  error in
+            if error == nil {
+            let template = CLKComplicationTemplateModularSmallRingText()
+            template.textProvider = CLKSimpleTextProvider(text: String(describing: myDelegate.trafficStats!.usedPercentage!))
+            template.fillFraction = Float((myDelegate.trafficStats!.usedPercentage)!)/100
+            print(String(describing: myDelegate.trafficStats!.usedPercentage!))
+            print("\(template.fillFraction)")
+            handler(CLKComplicationTimelineEntry(date: .init(timeIntervalSinceNow: 0), complicationTemplate: template))
+            }
+        }
     }
     
     
